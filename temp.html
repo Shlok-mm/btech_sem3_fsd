@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#" method="post">
+        <fieldset>
+     <legend>signup</legend>
+   <label for="a"> Name : </label> <input type="text" id="a" name="user"  placeholder="Enter your name" minlength="3" maxlength="50" required>
+     <br>
+     password: <input type="password" name="pass" placeholder="Enter password " required>
+
+     <br>
+     <label for="b">Email:</label><input type="email" id="b " placeholder="Enter Email" name="Email" required>
+     <br> 
+     
+     <label for="g">Gender :</label><input type="radio" id="g"  name="gen" value="male">Male    <input type="radio" id="g"  name="gen" value="female">Female  
+     <br>
+     <br>
+     hobby: <input type="checkbox" name="hobby" value="cricket">cricket  
+       <input type="checkbox" name="hobby" value="football">football    
+       <input type="checkbox" name="hobby" value="running">running   
+    
+     <br>
+     Dob: <input type="date" name="date" min="2026-09-18" max="2027-09-18">
+     <br>
+     Age:<input type="number" name="Age" min="2" max="50" step="1" value="18">
+     <br>
+     volume: <input type="range" min="0" max="100" value="50" step="5">
+     <br>
+     Address: <textarea name="addr" id="" rows="5" cols="20" placeholder="enter address" ></textarea> 
+     <br>
+     <input list="browesers" name="browsers" id="browsers">
+     <datalist id="browesers">
+        <option value="chrome">
+        <option value="firefox">
+     </datalist>
+     <br>
+     <select name="branch" >
+        <option value=""></option>
+     </select>
+     
+
+
+     <br>
+     <input type="reset">
+
+
+ 
+    
+           
+
+
+
+     <input type="submit">
+        </fieldset>
+
+    </form>
+</body>
+</html>

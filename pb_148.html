@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend align="center"> Signup</legend>
+            <label> Username:</label>
+            <input type="text" id="Username" name="Username" placeholder="Enter your name">
+
+            <br>
+            <br>
+            
+            <label> Password: </label>
+            <input type="password" id="pass" name="pass">
+
+            <br> 
+            <br> 
+
+            <label> Gender: </label>
+            <input type="radio" name="gender" id="gender">Male
+            <input type="radio" name="gender" id="gender">Female
+            <input type="radio" name="gender" id="gender">Others
+            
+            <br>
+            <br>
+            
+            <label> Area of interest: </label>
+            <input type="checkbox" name="interest" id="interest">Ds
+            <input type="checkbox" name="interest" id="interest">Dbms
+            <input type="checkbox" name="interest" id="interest">Cn
+            <input type="checkbox" name="interest" id="interest">Fsd
+
+            <br>
+            <br>
+
+            <label> Department: </label>
+            <select name="branch">
+                <option value="Select" selected disabled>Select branch </option>
+                    <optgroup label="Computer">
+                        <option value="CSE">CSE</option>
+                        <option value="AIML">AIML</option>
+                        <option value="IT">IT</option>
+                        <option value="CSE(DS)">CSE(DS)</option>
+                        <option value="CSE(CS)">CSE(CS)</option>
+                    </optgroup>
+                    <optgroup label="Other"> 
+                        <option value="Mech">Mechenical </option>
+                        <option value="civil">Civil </option>
+                        <option value="art">Art </option>
+                        <option value="Ec">Ec </option>
+                    </optgroup>
+            </select>
+
+            <br>
+            <br>
+
+            <label> Address</label>
+            <textarea placeholder="Enter your address" rows="7"></textarea>
+
+            <br>
+            <br>
+            
+            <label> Upload Cv</label>
+            <input type="file" name="cv" id="cv" value="Choose file" accept=".pdf">
+            
+            <br>
+            <br>
+
+            <label> Date</label>
+            <input type="date" >
+
+            <br>
+            <br>
+
+            <label> Email </label>
+            <input type="email" > 
+
+            <br> 
+            <br> 
+
+            <input type="submit" value="click me ">
+            <input type="reset" value="Reset">
+        </fieldset>
+    </form>
+</body>
+</html>

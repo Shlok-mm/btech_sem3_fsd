@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form action="#" method="post" >
+    <fieldset>
+    <legend>INFORMATION</legend>
+    <label for="a"> Username: </label> <input type="text" id="a" name="user"  placeholder="Enter your Username" minlength="3" maxlength="50" required>
+    <br>
+    <br>
+    password: 
+    <input type="password" name="pass" placeholder="Enter password " required>
+
+    <br>
+    <br>
+    <label for="b">Email:</label><input type="email" id="b " placeholder="Enter Email" name="Email" required>
+    <br>
+    <br> 
+     
+    <label for="g">Gender :</label><input type="radio" id="g"  name="gen" value="male">Male    <input type="radio" id="g"  name="gen" value="female">Female  
+    <br>
+    <br>
+    <br>
+    hobby: <input type="checkbox" name="hobby" value="cricket">cricket  
+       <input type="checkbox" name="hobby" value="football" checked>football    
+       <input type="checkbox" name="hobby" value="running">running   
+       <input type="checkbox" name="hobby" value="gaming">gaming
+    </fieldset>
+
+    <fieldset>
+        <legend> Additional Information</legend>
+        
+        <label> Date of Birth</label>
+        <input type="date" name="dob" id="dob" min="2000-01-01" max="2100-12-31">
+        
+        <br>
+        <br>
+        
+        <label> Age: </label>
+        <input type="number" name="age" id="age" min="18" max="90" step="1" value=6>   
+        
+        <br>
+        <br>
+
+        <label> Fav color: </label>
+        <input type="color" name="fcolor" id="fcolor" value="red">
+
+        <br>
+        <br>
+
+        <label> Preffered browser: </label>
+        <input list="browsers" name="brws" id="brws">
+            <datalist id="browsers">
+                <option value="Chrome"></option>
+                <option value="Firefox"></option>
+                <option value="Edge"></option>
+
+            </datalist>
+
+        <br>
+        <br>
+
+        <label> Select Branch: </label>
+        <select name="branch">
+            <option value="Select" selected disabled>Select branch </option>
+            <optgroup label="Computer">
+                <option value="CSE">CSE</option>
+                <option value="AIML">AIML</option>
+                <option value="IT">IT</option>
+                <option value="CSE(DS)">CSE(DS)</option>
+                <option value="CSE(CS)">CSE(CS)</option>
+            </optgroup>
+            <optgroup label="Other"> 
+                <option value="Mech">Mechenical </option>
+                <option value="civil">Civil </option>
+                <option value="art">Art </option>
+                <option value="Ec">Ec </option>
+            </optgroup>
+        </select>
+
+    </fieldset>
+
+    <fieldset>
+        <legend> Feedback</legend>
+        <label> Your message: </label>
+        <br>
+        <textarea name="msg" id="msg" placeholder="Your feedback" rows="5" cols="10"></textarea>
+        
+        <br>
+        <br>
+        
+        <label> Your satisfaction level </label>
+        <input type="range" name="satisfaction_lvl" id="satisfaction_lvl" min="0" max="100" value="0" > 
+
+        <br>
+        <br>
+
+        <input type="hidden" name="userid" value="12345">
+    
+        <br>
+        <br>
+
+        <input type="file" name="resume" id="resume" accept=".pdf,.png,.jpg,.jpeg" multiple>
+
+
+    </fieldset>
+
+
+
+    <fieldset> 
+        <legend> Submit section </legend>
+
+        <input type="submit" value="Submit form">
+        <input type="reset" value="Reset form">
+        <input type="submit" value="Submit(button tag)">
+
+    </fieldset>
+    </form>
+</body>
+</html>
